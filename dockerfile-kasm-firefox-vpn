@@ -4,7 +4,7 @@
 # 1.18.0
 # develop
 
-  FROM kasmweb/firefox:1.16.0-rolling-weekly
+  FROM kasmweb/firefox:1.18.0-rolling-weekly
   USER root
 
   ENV HOME /home/kasm-default-profile

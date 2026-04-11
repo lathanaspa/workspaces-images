@@ -3,7 +3,7 @@
 # 1.18.0
 # develop
   
-  FROM kasmweb/core-ubuntu-noble:1.16.1-rolling-weekly
+  FROM kasmweb/core-ubuntu-noble:1.18.0-rolling-weekly
   USER root
 
   ENV HOME /home/kasm-default-profile
