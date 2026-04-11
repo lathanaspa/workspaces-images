@@ -1,10 +1,7 @@
 # 1.16.0
 # 1.16.1
-# 1.17.0
-# 1.18.0
-# develop
 
-  FROM kasmweb/chrome:1.18.0-rolling-weekly
+  FROM kasmweb/core-ubuntu-focal:1.16.0-rolling-weekly
   USER root
 
   ENV HOME /home/kasm-default-profile
