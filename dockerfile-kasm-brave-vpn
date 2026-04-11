@@ -8,14 +8,26 @@ USER root
 
 ENV HOME=/home/kasm-default-profile
 ENV STARTUPDIR=/dockerstartup
-ENV INST_SCRIPTS=$STARTUPDIR/install
+ENV INST_DIR=$STARTUPDIR/install
+ENV INST_SCRIPTS=/ubuntu/install/vpn/install_vpn.sh
 WORKDIR $HOME
 
 ######### Customize Container Here ###########
 
+# Copy install scripts
+COPY ./src/ $INST_DIR
 
-RUN touch $HOME/Desktop/hello.txt
-
+# Run installations
+RUN \
+  for SCRIPT in $INST_SCRIPTS; do \
+    bash ${INST_DIR}${SCRIPT} || exit 1; \
+  done && \
+  $STARTUPDIR/set_user_permission.sh $HOME && \
+  rm -f /etc/X11/xinit/Xclients && \
+  chown 1000:0 $HOME && \
+  mkdir -p /home/kasm-user && \
+  chown -R 1000:0 /home/kasm-user && \
+  rm -Rf ${INST_DIR}
 
 ######### End Customizations ###########
 
