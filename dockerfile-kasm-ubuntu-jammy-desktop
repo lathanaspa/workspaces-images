@@ -8,9 +8,27 @@ USER root
 
 ENV HOME=/home/kasm-default-profile
 ENV STARTUPDIR=/dockerstartup
-ENV INST_DIR=$STARTUPDIR/install
-ENV INST_SCRIPTS=$STARTUPDIR/install
+# ENV INST_DIR=$STARTUPDIR/install
+# ENV INST_SCRIPTS=$STARTUPDIR/install
 WORKDIR $HOME
+
+### Envrionment config
+ENV DEBIAN_FRONTEND=noninteractive \
+    SKIP_CLEAN=true \
+    KASM_RX_HOME=$STARTUPDIR/kasmrx \
+    DONT_PROMPT_WSL_INSTALL="No_Prompt_please" \
+    INST_DIR=$STARTUPDIR/install \
+    INST_SCRIPTS="/ubuntu/install/tools/install_tools_deluxe.sh \
+                  /ubuntu/install/misc/install_tools.sh \
+                  /ubuntu/install/brave/install_brave.sh \
+                  /ubuntu/install/chrome/install_chrome.sh \
+                  /ubuntu/install/firefox/install_firefox.sh \
+                  /ubuntu/install/sublime_text/install_sublime_text.sh \
+                  /ubuntu/install/nextcloud/install_nextcloud.sh \
+                  /ubuntu/install/only_office/install_only_office.sh \
+                  /ubuntu/install/zoom/install_zoom.sh \
+                  /ubuntu/install/obs/install_obs.sh \
+                  /ubuntu/install/cleanup/cleanup.sh"
 
 ######### Customize Container Here ###########
 

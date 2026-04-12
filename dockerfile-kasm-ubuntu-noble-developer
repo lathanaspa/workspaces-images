@@ -8,8 +8,8 @@ USER root
 
 ENV HOME=/home/kasm-default-profile
 ENV STARTUPDIR=/dockerstartup
-ENV INST_DIR=$STARTUPDIR/install
-ENV INST_SCRIPTS=$STARTUPDIR/install
+# ENV INST_DIR=$STARTUPDIR/install
+# ENV INST_SCRIPTS=$STARTUPDIR/install
 WORKDIR $HOME
 
 ######### Customize Container Here ###########
@@ -27,8 +27,11 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/firefox/install_firefox.sh \
                   /ubuntu/install/sublime_text/install_sublime_text.sh \
                   /ubuntu/install/vs_code/install_vs_code.sh \
+                  /ubuntu/install/postman/install_postman.sh \
+                  /ubuntu/install/inkscape/install_inkscape.sh \
                   /ubuntu/install/nextcloud/install_nextcloud.sh \
                   /ubuntu/install/only_office/install_only_office.sh \
+                  /ubuntu/install/zoho_email/install_zoho_email.sh \
                   /ubuntu/install/zoom/install_zoom.sh \
                   /ubuntu/install/obs/install_obs.sh \
                   /ubuntu/install/cleanup/cleanup.sh"
