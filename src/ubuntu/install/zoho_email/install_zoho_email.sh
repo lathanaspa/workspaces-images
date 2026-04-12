@@ -2,7 +2,7 @@
 set -ex
 mkdir -p /opt/zoho-mail-desktop
 cd /opt/zoho-mail-desktop
-wget -q https://downloads.zohocdn.com/zmail-desktop/linux/zoho-mail-desktop-x64-v1.3.2.AppImage -O zoho-mail-desktop.AppImage
+wget -q https://downloads.zohocdn.com/zmail-desktop/linux/zoho-mail-desktop-lite-x64-v1.9.1.AppImage -O zoho-mail-desktop.AppImage
 chmod +x zoho-mail-desktop.AppImage
 ./zoho-mail-desktop.AppImage --appimage-extract
 rm zoho-mail-desktop.AppImage
