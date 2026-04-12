@@ -1,7 +1,7 @@
 # 1.16.0
 # 1.16.1
 
-FROM kasmweb/core-ubuntu-focal:1.18.0-rolling-weekly
+FROM kasmweb/core-ubuntu-focal:1.16.0-rolling-weekly
 USER root
 
 ENV HOME=/home/kasm-default-profile
