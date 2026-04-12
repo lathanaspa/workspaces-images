@@ -8,11 +8,9 @@ USER root
 
 ENV HOME=/home/kasm-default-profile
 ENV STARTUPDIR=/dockerstartup
-ENV INST_DIR=$STARTUPDIR/install
-ENV INST_SCRIPTS=$STARTUPDIR/install
+# ENV INST_DIR=$STARTUPDIR/install
+# ENV INST_SCRIPTS=$STARTUPDIR/install
 WORKDIR $HOME
-
-######### Customize Container Here ###########
 
 ### Envrionment config
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -32,6 +30,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/zoom/install_zoom.sh \
                   /ubuntu/install/obs/install_obs.sh \
                   /ubuntu/install/cleanup/cleanup.sh"
+
+######### Customize Container Here ###########
 
 # Copy install scripts
 COPY ./src/ $INST_DIR
