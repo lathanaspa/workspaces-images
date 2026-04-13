@@ -11,3 +11,4 @@ docker buildx build --platform linux/amd64,linux/arm64 -t lathanaspa/kasm-ubuntu
 docker buildx build --platform linux/amd64,linux/arm64 -t lathanaspa/kasm-ubuntu-noble-desktop:develop -f dockerfile-kasm-ubuntu-noble-desktop --push .
 docker buildx build --platform linux/amd64,linux/arm64 -t lathanaspa/kasm-ubuntu-noble-developer:develop -f dockerfile-kasm-ubuntu-noble-developer --push .
 docker buildx build --platform linux/amd64,linux/arm64 -t lathanaspa/kasm-ubuntu-noble-desktop-vpn:develop -f dockerfile-kasm-ubuntu-noble-desktop-vpn --push .
+docker buildx build --platform linux/amd64 -t lathanaspa/kasm-kasm-zoho-mail:develop -f dockerfile-kasm-zoho-mail --push .
