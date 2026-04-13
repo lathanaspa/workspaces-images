@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 set -ex
+ARCH=$(uname -m)
+
+if [[ "$ARCH" == "aarch64" || "$ARCH" == "arm64" ]]; then
+  echo "Zoho Mail Desktop is not supported on ARM ($ARCH), skipping..."
+  exit 0
+fi
+
 mkdir -p /opt/zoho-mail-desktop
 cd /opt/zoho-mail-desktop
 wget -q https://downloads.zohocdn.com/zmail-desktop/linux/zoho-mail-desktop-lite-x64-v1.9.1.AppImage -O zoho-mail-desktop.AppImage
