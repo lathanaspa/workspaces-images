@@ -29,8 +29,18 @@ RUN \
   chown -R 1000:0 /home/kasm-user && \
   rm -Rf ${INST_DIR}
 
-COPY ./src/ubuntu/install/zoho_email/custom_startup.sh /dockerstartup/zoho-mail-startup.sh
-RUN chmod +x /dockerstartup/zoho-mail-startup.sh
+# Security modifications
+COPY ./src/ubuntu/install/misc/single_app_security.sh $INST_SCRIPTS/misc/
+RUN  bash $INST_SCRIPTS/misc/single_app_security.sh -t && rm -rf $INST_SCRIPTS/misc/
+
+COPY ./src/ubuntu/install/zoho_email/custom_startup.sh $STARTUPDIR/custom_startup.sh
+RUN chmod +x $STARTUPDIR/custom_startup.sh
+RUN chmod 755 $STARTUPDIR/custom_startup.sh
+
+# Restrict to single app
+COPY ./src/ubuntu/install/misc/restrict_to_single_app.sh $INST_SCRIPTS/misc/
+RUN  bash $INST_SCRIPTS/misc/restrict_to_single_app.sh -t && rm -rf $INST_SCRIPTS/misc/
+
 
 ######### End Customizations ###########
 
