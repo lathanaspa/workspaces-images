@@ -22,6 +22,19 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/sublime_text/install_sublime_text.sh \
                   /ubuntu/install/vs_code/install_vs_code.sh \
                   /ubuntu/install/postman/install_postman.sh \
+                  /ubuntu/install/dbeaver/install_dbeaver.sh \
+                  /ubuntu/install/git/install_git.sh \
+                  /ubuntu/install/docker/install_docker.sh \
+                  /ubuntu/install/node/install_node.sh \
+                  /ubuntu/install/go/install_go.sh \
+                  /ubuntu/install/rust/install_rust.sh \
+                  /ubuntu/install/python/install_python.sh \
+                  /ubuntu/install/playwright/install_playwright.sh \
+                  /ubuntu/install/selenium/install_selenium.sh \
+                  /ubuntu/install/jq/install_jq.sh \
+                  /ubuntu/install/sqlite/install_sqlite.sh \
+                  /ubuntu/install/meld/install_meld.sh \
+                  /ubuntu/install/misc/install_network_tools.sh \
                   /ubuntu/install/inkscape/install_inkscape.sh \
                   /ubuntu/install/nextcloud/install_nextcloud.sh \
                   /ubuntu/install/only_office/install_only_office.sh \
