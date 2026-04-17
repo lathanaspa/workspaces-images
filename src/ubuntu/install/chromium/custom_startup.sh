@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ex
-START_COMMAND="google-chrome"
-PGREP="chrome"
+START_COMMAND="chromium"
+PGREP="chromium"
 MAXIMIZE="true"
 DEFAULT_ARGS=""
 
