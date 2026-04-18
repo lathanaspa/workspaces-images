@@ -43,7 +43,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/zoho_email/install_zoho_email.sh \
                   /ubuntu/install/zoom/install_zoom.sh \
                   /ubuntu/install/obs/install_obs.sh \
-                  /ubuntu/install/misc/sort_desktop_icons.sh \
                   /ubuntu/install/cleanup/cleanup.sh"
 
 ######### Customize Container Here ###########

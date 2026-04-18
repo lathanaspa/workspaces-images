@@ -26,7 +26,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/zoom/install_zoom.sh \
                   /ubuntu/install/obs/install_obs.sh \
                   /ubuntu/install/vpn/install_vpn.sh \
-                  /ubuntu/install/misc/sort_desktop_icons.sh \
                   /ubuntu/install/cleanup/cleanup.sh"
 
 ######### Customize Container Here ###########
