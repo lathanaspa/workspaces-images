@@ -26,6 +26,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/sublime_text/install_sublime_text.sh \
                   /ubuntu/install/vs_code/install_vs_code.sh \
                   /ubuntu/install/git/install_git.sh \
+                  /ubuntu/install/claude_code/install_claude_code.sh \
+                  /ubuntu/install/codex/install_codex.sh \
                   /ubuntu/install/docker/install_docker.sh \
                   /ubuntu/install/jq/install_jq.sh \
                   /ubuntu/install/misc/install_network_tools.sh \

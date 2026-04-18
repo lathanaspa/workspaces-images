@@ -23,9 +23,11 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/firefox/install_firefox.sh \
                   /ubuntu/install/sublime_text/install_sublime_text.sh \
                   /ubuntu/install/vs_code/install_vs_code.sh \
+                  /ubuntu/install/git/install_git.sh \
+                  /ubuntu/install/claude_code/install_claude_code.sh \
+                  /ubuntu/install/codex/install_codex.sh \
                   /ubuntu/install/postman/install_postman.sh \
                   /ubuntu/install/dbeaver/install_dbeaver.sh \
-                  /ubuntu/install/git/install_git.sh \
                   /ubuntu/install/docker/install_docker.sh \
                   /ubuntu/install/node/install_node.sh \
                   /ubuntu/install/go/install_go.sh \
